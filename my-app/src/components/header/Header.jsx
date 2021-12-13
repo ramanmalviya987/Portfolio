@@ -4,54 +4,56 @@ import './header.css'
 import { motion } from 'framer-motion'
 import Dark from "../../images/man.png"
 import Social from '../social/Social';
+import Animation, { headerAnimation, imageAnimation } from '../../Animation'
+import { useScroll } from '../useScroll';
 
 
 const Header = () => {
-
+const [element , controls] = useScroll();
     return (
-        <div className="header  section__padding  " id="home">
-            <div className="header-content">
-                <motion.h1
-                    initial={{ opacity: 0, x: -100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
+        <motion.div 
+        initial={{y:100 , opacity: 0}}
+        animate={{y:1, opacity:1}}
+        transition={{delay: 0.5 , type: "tween"}}
+        className="header  section__padding" id="home" ref={element}  >
+            <motion.div
+            variants={headerAnimation}
+            animate={controls}
+            transition={{delay: 0.2, type: "tween"}}
+              className="header-content">
+                <h1
+                    
                     className="gradient__text">Mohd Rehan Qureshi
-                </motion.h1>
-                <motion.p
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
+                </h1>
+                <p
+                    
                 >Nice to meet you,
-                    Since beginning my journey as a freelance designer nearly 2 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</motion.p>
-                <motion.div 
-                initial={{opacity:0, x: -100}}
-                animate={{opacity:1, x: 0}}
-                transition={{duration:1}}
+                    Since beginning my journey as a freelance designer nearly 2 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+                <div 
+               
                
                 className="header-content_btn">
                 <Button 
                 variant="contained">Resume</Button>
-                </motion.div>
-                <motion.div
-                initial={{opacity:0 , x:100}}
-                animate={{opacity:1, x:0}}
-                transition={{duration:1}}
+                </div>
+                <div
+                
                 >
                     <Social />
-                </motion.div>
+                </div>
                 
-            </div>
+            </motion.div>
 
 
-            <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1 }}
-                className="header-image">
+            <motion.div className="header-image"  
+             variants={imageAnimation}
+             animate={controls}
+             transition={{delay: 0.2, type: "tween"}}
+         >
                 <img src={Dark} />
             </motion.div>
 
-        </div>
+        </motion.div>
 
 
     );

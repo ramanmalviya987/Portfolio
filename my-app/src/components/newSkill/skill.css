@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.progress{
+
+background-color:#031B34;
+	border-radius: 22px;
+	position: relative;
+	height: 30px;
+	width: 300px;
+
+}
+
+.progess-body{
+    background-color: black; 
+	
+
+}
+h3{
+	color: white;
+}
+
+p {
+	color: white;
+}
+.progress-done {
+	background: linear-gradient(to right, #FDFBFB, #EBEDEE 70%);
+
+	
+	border-radius: 22px;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}

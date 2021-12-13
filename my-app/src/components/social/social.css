@@ -29,10 +29,10 @@ body{
     position: relative;
   }
   .btn i{
-    line-height: 40px;
+    line-height: 30px;
     font-size: 26px;
     transition: 0.2s linear;
-    
+    margin-left: -5px;
   }
   .btn:hover i{
     transform: scale(1.3);

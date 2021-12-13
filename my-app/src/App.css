@@ -7,9 +7,11 @@
 body {
    background-color:black;
 }
-
+li{
+  list-style: none;
+}
 a {
-  color: unset;
+  color: white;
   text-decoration: none;
 }
 /* .gradient__bg{
