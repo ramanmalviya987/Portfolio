@@ -37,7 +37,8 @@ flex: 1;
 }
 .header-content_btn button {
     margin-top: 21px;
-    background: #FF8A71;
+    background: var(--gradient-text);
+    color:white;
 }
 
 

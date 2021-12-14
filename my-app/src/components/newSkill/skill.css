@@ -23,7 +23,7 @@ p {
 	color: white;
 }
 .progress-done {
-	background: linear-gradient(to right, #FDFBFB, #EBEDEE 70%);
+	background: linear-gradient(to right, rgb(255, 153, 102), rgb(255, 94, 98));
 
 	
 	border-radius: 22px;

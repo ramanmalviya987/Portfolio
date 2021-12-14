@@ -1,7 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
+import emailjs from 'emailjs-com'
 
 import './contact.css'
 const Contact = () => {
+    const aftsub = "Thanks for Contact Me";
+    const [sub, setsub] = useState("");
+    const submit = (e) => {
+        e.preventDefault();
+        console.log(e.target);
+
+        emailjs.sendForm('gmail', 'template_prgy42s', e.target, 'user_IHCiyGYkNZcFeQHj3kONa')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset()
+        setsub(aftsub);
+    }
     return (
         <div className="contact section__padding">
             <div className="content" data-aos="zoom-out-up"
@@ -50,18 +66,18 @@ const Contact = () => {
        data-aos-offset="200"
        data-aos-mirror="ture"
        data-aos-duration="1000">
-                    <form>
+                    <form onSubmit={submit}>
                         <h2>Send Message</h2>
                         <div className="inputBox">
-                            <input type="text" name=""  required="required" />
+                            <input type="text" name="name"  required="required" />
                             <span>Full Name</span>
                         </div>
                         <div className="inputBox">
-                            <input type="text" name=""  required="required" />
+                            <input type="text" name="email"  required="required" />
                             <span>Email</span>
                         </div>
                         <div className="inputBox">
-                            <textarea required="required"></textarea>
+                            <textarea required="required" name="msg"></textarea>
                             <span>Type Your Message....</span>
                         </div>
                         <div className="inputBox">
