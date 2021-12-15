@@ -10,11 +10,16 @@
   --gradient-text2: linear-gradient(#f32170,#ffeb07,#2193f3,#ff00eb);
   --gradient-text:linear-gradient(to right, rgb(255, 65, 108), rgb(255, 75, 43));
   --gradient-bar: linear-gradient(to right, rgb(255, 65, 108), rgb(255, 75, 43));
+  --gradient-text-light:linear-gradient(to right, rgba(255, 65, 108,0.5), rgba(255, 75, 43,0.5));
+
   
   
   --color-bg: #040C18;
-  --color-footer : #031B34;
+  --color-footer : #ff4b2b;
   --color-blog: #042c54;
   --color-text: #81AFDD;
   --color-subtext: #FF8A71;
+}
+a:hover{
+  color: inherit;
 }

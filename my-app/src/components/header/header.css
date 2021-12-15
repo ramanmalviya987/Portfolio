@@ -35,10 +35,15 @@ flex: 1;
     width: 100%;
     
 }
-.header-content_btn button {
-    margin-top: 21px;
-    background: var(--gradient-text);
+.header-content_btn a {
+    /* margin-top: 21px; */
+    background: var(--gradient-text-light);
     color:white;
+    margin: 10px;
+    height: 40px;
+}
+.header-content_btn a:hover{
+    background: var(--gradient-text);
 }
 
 

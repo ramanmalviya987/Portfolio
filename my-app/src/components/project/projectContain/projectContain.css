@@ -58,6 +58,25 @@
 @media screen and (max-width: 550px) {
     .gpt3__blog-container_article-content h3 {
         font-size: 18px;
-        line-height: 25p;
+        line-height: 25px;
     }
+}
+
+.gpt3__blog-container_article-image {
+    position: relative;
+}
+.gpt3__blog-container_article-image .tag_container{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    margin-top: 8px;
+}
+.gpt3__blog-container_article-image .tag_container .tag_span span{
+    padding: 5px;
+    font-size: 14px !important;
+    font-weight: 600;
+    background-color: rgba(243, 194, 186, 0.87);
+    color: rgb(252, 52, 17);
+    border-radius:4px;
+    margin: 0 5px;
 }
