@@ -67,7 +67,7 @@ body{
     }
   }
   .middle .btn:nth-child(1)::before{
-    background-color: #1DA1F2 !important;
+    background-color: #CD486B !important;
   }
   .middle .btn:nth-child(2)::before{
     background-color: #0072B1 !important;
