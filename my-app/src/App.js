@@ -14,11 +14,21 @@ function App() {
     <div  className="App">
       <div className="gradient__bg overflow-hidden">
         <Navbar />
-        <Header />
-        <Project />
-        <Services />
-       <Skills />
-       <Contact />
+        <section id="about">
+          <Header />
+        </section>
+        <section id="projects">
+          <Project />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+       <section id="contact">
+        <Contact />
+       </section>
        <Footer /> 
       
       </div>
