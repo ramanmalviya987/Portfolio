@@ -21,12 +21,12 @@ const Navbar = () => {
         whileTap="tab"
         
         
-        ><a href="#">About</a></motion.p>
+        ><a href="#about">About</a></motion.p>
         <motion.p
          variants={LinksVarient}
          whileHover="hover"
          whileTap="tab"
-        ><a href="#project">Project</a></motion.p>
+        ><a href="#projects">Project</a></motion.p>
         <motion.p
          variants={LinksVarient}
          whileHover="hover"
@@ -36,12 +36,12 @@ const Navbar = () => {
          variants={LinksVarient}
          whileHover="hover"
          whileTap="tab"
-        ><a href="#">Skill</a></motion.p>
+        ><a href="#skills">Skill</a></motion.p>
         <motion.p
          variants={LinksVarient}
          whileHover="hover"
          whileTap="tab"
-        ><a href="#">Contact</a></motion.p>
+        ><a href="#contact">Contact</a></motion.p>
         </>
     )
     const [toggleMenu, SetToggleMenu] = useState(false)

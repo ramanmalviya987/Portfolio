@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import emailjs from 'emailjs-com'
+import Button from '@mui/material/Button';
 
 import './contact.css'
 const Contact = () => {
@@ -20,27 +21,33 @@ const Contact = () => {
     }
     return (
         <div className="contact section__padding">
-            <div className="content" data-aos="zoom-out-up"
+            <div className="content" 
+            data-aos="zoom-out-up"
        data-aos-offset="200"
        data-aos-mirror="true"
-       data-aos-duration="1000">
+       data-aos-once="true"
+       data-aos-duration="1000"
+    >
                 <h2 className="gradient__text">
                     Contact Us
                 </h2>
-                <p className="gradient__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet saepe rerum natus vero aliquid assumenda ducimus incidunt ratione quo!</p>
+                <p className="gradient__text">I am here to start up your start-up. I want to get to know about you—your business, your work, your needs. We’ll take it from there. I look forward to hearing from you!</p>
             </div>
             <div className="container">
-                <div className="contactInfo" data-aos="slide-right"
+                <div className="contactInfo"
+                 data-aos="slide-right"
        data-aos-offset="200"
        data-aos-mirror="ture"
-       data-aos-duration="1000">
+       data-aos-once="true"
+       data-aos-duration="1000"
+    >
                     <div className="box">
                         <div className="icon">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <i class="fas fa-map-marked-alt"></i>
                         </div>
                         <div className="text">
                             <h3>Address</h3>
-                            <p>2342 Apolo DB City,  <br />nipania Indore, </p>
+                            <p>Pithampur Sector-1  <br />District Dhar, Madhya Pradesh<br />India, 454775 </p>
                         </div>
                     </div>
                     <div className="box">
@@ -49,7 +56,7 @@ const Contact = () => {
                         </div>
                         <div className="text">
                             <h3>Phone</h3>
-                            <p>123-234-3233</p>
+                            <p><a href="tel:+919926488445">+91 9926488445</a></p>
                         </div>
                     </div>
                     <div className="box">
@@ -58,12 +65,13 @@ const Contact = () => {
                              </div>
                         <div className="text">
                             <h3>Email</h3>
-                            <p>test@gmail.com</p>
+                            <p><a href="mailto:mohdrehanrq0@gmail.com">mohdrehanrq0@gmail.com</a></p>
                         </div>
                     </div>
                 </div>
                 <div className="contactForm" data-aos="slide-left"
        data-aos-offset="200"
+       data-aos-once="true" 
        data-aos-mirror="ture"
        data-aos-duration="1000">
                     <form onSubmit={submit}>
@@ -81,8 +89,7 @@ const Contact = () => {
                             <span>Type Your Message....</span>
                         </div>
                         <div className="inputBox">
-                            <input type="submit"  value="send" />
-                            
+                            <Button type="submit" variant="contained">Send</Button>
                         </div>
                     </form>
                 </div>

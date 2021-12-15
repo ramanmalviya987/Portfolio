@@ -116,6 +116,17 @@ h4{
     line-height: 15px;
     color:white;
 }
+.gpt3__footer-links_div .middle{
+    display: block;
+    margin: 0;
+    text-align:left;
+}
+.gpt3__footer-links_div .middle a:nth-child(1){
+    margin-left:0px;
+}
+.gpt3__footer-links_div .middle a{
+    color: #fff;
+}
 
 @media screen and (max-width: 850px) {
     .gpt3__footer-heading h1 {

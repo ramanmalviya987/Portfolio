@@ -15,6 +15,9 @@ background-color:#031B34;
 	
 
 }
+.content.skills_wrap{ 
+	margin-bottom: 0px !important;
+}
 h3{
 	color: white;
 }

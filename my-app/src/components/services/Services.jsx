@@ -20,7 +20,8 @@ const Services = () => {
   return (
     <div className="services section__padding">
       <div className="services-heading gradient__text" data-aos="zoom-out"
-      data-aos-duration="10"
+      data-aos-duration="1000"
+      data-aos-once="true" 
       >
 
         <h1>Services</h1>
@@ -31,14 +32,16 @@ const Services = () => {
     data-aos-offset="200"
        data-aos-duration="1000"
        data-aos-mirror="true"
+       data-aos-once="true" 
     
     >
 
-      <h1 className="gradient__text">Appnovation specializes in website design and development services. Our website developers provide expert web application development and web design</h1>
+      <h1 className="gradient__text">Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains.</h1>
     </div>
     <div className="gpt3__features-container"
      data-aos="fade-left"
      data-aos-offset="200"
+     data-aos-once="true" 
         data-aos-duration="1000"
         data-aos-mirror="true"
     >

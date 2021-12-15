@@ -1,5 +1,4 @@
 import React from 'react'
-import project from '../../images/project.jpg'
 import './project.css'
 const Project = (props) => {
     return (
@@ -8,7 +7,7 @@ const Project = (props) => {
                 <div className="Project-list">
                     <div className="Project-card ">
                         <div className="Project-image">
-                            <img src={props.img} />
+                            <img src={props.img} alt='project_img' />
                         </div>
                         <div className="Project-content">
                             <a href="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ">
